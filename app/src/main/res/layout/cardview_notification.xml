@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:paddingTop="@dimen/padding_10_dp"
+    android:paddingBottom="@dimen/padding_10_dp"
+    android:background="@drawable/border_rectangle"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardview_bg"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/profile_image"
+        android:src="@drawable/profile_img"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/profile_image"
+        android:layout_toEndOf="@id/profile_image"
+        android:padding="@dimen/padding_10_dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/User"
+            android:textColor="@color/black_shade"
+            android:layout_toRightOf="@id/profile_image"
+            android:layout_toEndOf="@id/profile_image"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"/>
+
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username"
+            android:layout_toRightOf="@id/profile_image"
+            android:id="@+id/Post"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/gray"
+            android:maxLines="1"/>
+
+    </LinearLayout>
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textIsSelectable="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:textSize="12dp"
+        android:id="@+id/Time"/>
+
+</RelativeLayout>
